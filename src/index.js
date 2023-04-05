@@ -69,7 +69,7 @@ import am4themes_animated from "@amcharts/amcharts4/themes/animated";
       chart.data = event.records.map((rec, index) => {
         return {
           // TODO: Text above the PinBullet; President's name
-          'text': rec.first.value,
+          'text': `${rec.first.value}\n${rec.last.value}`,
           // TODO: PinBullet's & time period's color; Party color
           'color': partyColor[rec.party.value],
           // TODO: Time period's start; Term's start
